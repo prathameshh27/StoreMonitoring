@@ -2,12 +2,14 @@
 
 This project aims to provide backend APIs for monitoring the online status of the stores during their business hours. The system is built using the Django framework and is designed to fetch and analyze data from various sources gathered in the database to generate reports that indicate the uptime and downtime of each store.
 
+------------------------------------------------------
+
 ## Installation
 The below instructions are unnecessary since all the dependencies should be available out of the box.
 - ****Skip to steps 7 and 8 to set up a superuser and the database.****
 - Use the steps only if the dependencies are found missing.
 
-------------------------------------------------------
+----
 
 1. Ensure you have Python 3.x and pip installed on your system.
 
@@ -47,6 +49,7 @@ The below instructions are unnecessary since all the dependencies should be avai
 8. Unzip the database from the StoreMonitoring folder to use the data loaded via CSV input files.
 Please place the database under the StoreMonitoring folder.
 
+------------------------------------------------------
 
 ## Report Generation APIs
 Below are the API endpoints available for triggering and retrieving reports:
@@ -84,6 +87,7 @@ This API is used to retrieve the status of the report generation or the generate
 - If report generation is still in progress, the API returns `"Running"` as the output.
 - If report generation is complete, the API returns `"Complete"` along with the CSV file containing the specified schema.
 
+------------------------------------------------------
 
 ## Debug Instructions
 
@@ -98,7 +102,7 @@ Feel free to adapt and integrate this logic into your project to accurately moni
 
 For further assistance or questions, contact [your contact information].
 
-
+------------------------------------------------------
 
 ## Debugging Endpoint
 
@@ -108,7 +112,7 @@ For debugging purposes, you can use the following endpoint:
 - This URL triggers the `debug_code` view, which is a starting point to simulate the calculations.
 - The steps can be viewed in the console and can be related to the logic explained below.
 
-
+------------------------------------------------------
 
 ## Logic Overview
 
@@ -182,6 +186,7 @@ Assumptions include:
 
 All the local calculations are combined together to calculate the final up/down time per hr, day, and week.
 
+------------------------------------------------------
 
 ## Expected Future Updates:
 The project is built within 2 - 2.5 days with a Rapid prototyping approach and will serve as an MVP (Minimal viable product).
