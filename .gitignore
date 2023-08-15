@@ -9,3 +9,4 @@ StoreMonitoring/__pycache__/
 StoreMonitoring/settings/__pycache__/
 StoreMonitoring/local_db.sqlite3
 Resources/data_analytics.ipynb
+apps/utils/__pycache__/

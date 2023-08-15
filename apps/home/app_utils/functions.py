@@ -275,7 +275,7 @@ def run_report_task(report_obj):
     max_datetime_utc = max_datetime.replace(tzinfo=timezone.utc)
 
     store_reports = []
-    all_stores = Store.objects.all()[:100]
+    all_stores = Store.objects.all()            #[:100]
 
     max_threads = 4
 
