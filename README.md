@@ -4,11 +4,10 @@ This project aims to provide backend APIs for monitoring the online status of th
 
 ## Installation
 The below instructions are unnecessary since all the dependencies should be available out of the box.
-- ****Jump to step 8 to set up the database.****
+- ****Skip to steps 7 and 8 to set up a superuser and the database.****
 - Use the steps only if the dependencies are found missing.
 
-                                                                                                                                    
-
+------------------------------------------------------
 
 1. Ensure you have Python 3.x and pip installed on your system.
 
