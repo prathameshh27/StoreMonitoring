@@ -9,8 +9,7 @@ The below instructions are unnecessary since all the dependencies should be avai
 - ****Skip to steps 7 and 8 to set up a superuser and the database.****
 - Use the steps only if the dependencies are found missing.
 
-----
-
+____
 1. Ensure you have Python 3.x and pip installed on your system.
 
 2. Clone the Taskboard App repository to your local machine:
