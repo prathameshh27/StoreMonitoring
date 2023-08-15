@@ -1,6 +1,6 @@
 # Store Monitoring
 
-This README provides an overview of the logic and functionality behind the Store Uptime/Downtime Calculator, which calculates the uptime and downtime for a all the store instances within specific time intervals. The calculator processes store logs and operating hours to generate accurate uptime and downtime metrics.
+This README provides an overview of the logic and functionality behind the Store Uptime/Downtime Calculator, which calculates the uptime and downtime for all the store instances within specific time intervals. The calculator processes store logs and operating hours to generate accurate uptime and downtime metrics.
 
 ## Installation
 
@@ -44,7 +44,7 @@ This README provides an overview of the logic and functionality behind the Store
 
 ## Report Generation APIs
 
-Below are the API enpoints available for triggering and retrieving reports:
+Below are the API endpoints available for triggering and retrieving reports:
 
 ### Trigger Report Generation - `/trigger_report`
 
@@ -88,7 +88,7 @@ For debugging purposes, you can use the following endpoint:
 - Debugging URL: [http://127.0.0.1:8000/api/debug_code/<store_id>](http://127.0.0.1:8000/api/debug_code/2311272071941344516)
 - Eg: [http://127.0.0.1:8000/api/debug_code/2311272071941344516](http://127.0.0.1:8000/api/debug_code/2311272071941344516)
 - This URL triggers the `debug_code` view, which is a starting point to simulate the calculations.
-- The steps can be viewed in the console and can be related with the logic explained below.
+- The steps can be viewed in the console and can be related to the logic explained below.
 
 ## Logic Overview
 
@@ -98,11 +98,11 @@ The `debug_code` view is responsible for initializing the calculation process. I
 
 ### `get_store_report` Function
 
-This function handles a single store instance. It retrieves the uptime and downtime for specific time intervals (past hour, past day, past week). These intervals are calculated in UTC and passed to the `get_activity_in_mins` function.
+This function handles a single-store instance. It retrieves the uptime and downtime for specific time intervals (past hour, past day, past week). These intervals are calculated in UTC and passed to the `get_activity_in_mins` function.
 
 ### `get_activity_in_mins` Function
 
-The `get_activity_in_mins` function accepts an interval and retrieves the uptime and downtime within the specified period. It collects necessary dependencies to compute the results:
+The `get_activity_in_mins` function accepts an interval and retrieves the uptime and downtime within the specified period. It collects the necessary dependencies to compute the results:
 
 - Store Timezone
 - Store Operating Hours in the input range
@@ -113,10 +113,10 @@ The `get_activity_in_mins` function accepts an interval and retrieves the uptime
 The function iterates over all the operating hours of the store and identifies the relevant operating intervals. It then checks for overlaps between operating hours and the input interval.
 You will see this message before the loop starts - `Below are the Operating hours for the store:  2311272071941344516`
 
-Let us relate this with the console logs:
-At this point, We have the very 1st interval / operation hours in local time.
-This is skipped due to detection of invalid interval. Function moves to next interval. 
-The function gets the day and identifies the exact operating interval from the past which can be seen in the console as below:
+Let us relate this to the console logs:
+At this point, We have the very 1st interval/operation hours in local time.
+This is skipped due to the detection of invalid intervals. The function moves to the next interval. 
+The function gets the day and identifies the exact operating interval from the past which can be seen in the console below:
 
 `
 Day of the week: 2
@@ -125,11 +125,11 @@ UTC Interval:           2023-01-25 15:00:00+00:00               2023-01-26 04:59
 `
 
 Next the fuction checks the overlap between operating hours (OH) and input interval / timeframe (IP)
-
+`
 IPs1 ------------- IPe1
         OHs ------------- OHe
                  IPs2 ------------- IPe2
-
+`
 Where, 
 IPs, IPe are Input start and end
 OHs, OHe are Operating hours start and end
@@ -138,7 +138,7 @@ Consider 1st case,
 max(IPs1, OHs) = OHs
 min(IPe1, OHe) = IPe1
 
-Hence the valid interval to check the uptime / downtime would be (OHs, IPe1)
+Hence the valid interval to check the uptime/downtime would be (OHs, IPe1)
 You will see the below line on the console if a valid frame is found:
 `Valid/applicable Interval:      2023-01-25 17:13:22.479220+00:00      2023-01-25 18:13:22.479220+00:00`
 
@@ -155,7 +155,7 @@ Assumptions include:
 - Inactive windows are calculated by finding the longest difference between inactive and active records.
 - If the function identifies an inactive period within the timeframe, the period from the start to the inactive record is considered uptime, and the inactive record to the end is considered downtime.
         start |---------------InA-------| end
-The output of this fuction would be the uptime / downtime in minutes per Valid frame:
+The output of this function would be the uptime/downtime in minutes per Valid frame:
 `Local Timeframe - Uptime / Downtime:  60.0    0`
 
-All the local calculations are combined together to calculate the final up/down time per hr, day, week.
+All the local calculations are combined together to calculate the final up/down time per hr, day, and week.
