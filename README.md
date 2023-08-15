@@ -129,7 +129,8 @@ The `get_activity_in_mins` function accepts an interval and retrieves the uptime
 - Days (represented as a circular list for interval processing)
 
 The function iterates over all the operating hours of the store and identifies the relevant operating intervals. It then checks for overlaps between operating hours and the input interval.
-You will see this message before the loop starts - `Below are the Operating hours for the store:  2311272071941344516`
+You will see this message before the loop starts - 
+```Below are the Operating hours for the store:  2311272071941344516```
 
 Let us relate this to the console logs:
 At this point, We have the very 1st interval/operation hours in local time.
@@ -149,8 +150,8 @@ IPs1 ------------- IPe1
                  IPs2 ------------- IPe2
 ```
 Where, 
-IPs, IPe are Input start and end
-OHs, OHe are Operating hours start and end
+- IPs, IPe are Input start and end
+- OHs, OHe are Operating hours start and end
 
 Consider 1st case,
 max(IPs1, OHs) = OHs
@@ -158,7 +159,7 @@ min(IPe1, OHe) = IPe1
 
 Hence the valid interval to check the uptime/downtime would be (OHs, IPe1)
 You will see the below line on the console if a valid frame is found:
-`Valid/applicable Interval:      2023-01-25 17:13:22.479220+00:00      2023-01-25 18:13:22.479220+00:00`
+```Valid/applicable Interval:      2023-01-25 17:13:22.479220+00:00      2023-01-25 18:13:22.479220+00:00```
 
 
 If valid intervals are found, the function calls `process_logs` to analyze the logs and calculate uptime/downtime. If no operating hours are found, a continuous 24/7 operational interval is considered.
@@ -172,9 +173,10 @@ Assumptions include:
 - Downtime is identified when inactive logs are present.
 - Inactive windows are calculated by finding the longest difference between inactive and active records.
 - If the function identifies an inactive period within the timeframe, the period from the start to the inactive record is considered uptime, and the inactive record to the end is considered downtime.
-        ```start |---------------InA-------| end```
+          ```start |---------------InA-------| end```
 The output of this function would be the uptime/downtime in minutes per Valid frame:
-`Local Timeframe - Uptime / Downtime:  60.0    0`
+```Local Timeframe - Uptime / Downtime:  60.0    0```
+- if the store is not found active then the function checks if the uptime is greater than 10% of the stores operating hours. If not then 0 is returned. (Need more research on this to identify the percentage threshold) 
 
 All the local calculations are combined together to calculate the final up/down time per hr, day, and week.
 
