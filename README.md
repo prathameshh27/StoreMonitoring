@@ -101,7 +101,7 @@ For further assistance or questions, contact [your contact information].
 ## Debugging Endpoint
 
 For debugging purposes, you can use the following endpoint:
-- Debugging URL: http://127.0.0.1:8000/api/debug_code/<store_id>
+- Debugging URL: `http://127.0.0.1:8000/api/debug_code/<store_id>`
 - Eg: [http://127.0.0.1:8000/api/debug_code/2311272071941344516](http://127.0.0.1:8000/api/debug_code/2311272071941344516)
 - This URL triggers the `debug_code` view, which is a starting point to simulate the calculations.
 - The steps can be viewed in the console and can be related to the logic explained below.
