@@ -1,0 +1,1064 @@
+[
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "02:00:00"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "02:00:00"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "02:00:00"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "02:00:00"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "02:00:00"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "02:00:00"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "02:00:00"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "04:00:00"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "04:00:00"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "04:00:00"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "04:00:00"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "04:00:00"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "04:00:00"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "04:00:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "6",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "4",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "1",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "5",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "3",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "0",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "2",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "4",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "0",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "2",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "1",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "3",
+        "start_time_local": "09:00:00",
+        "end_time_local": "11:00:00"
+    },
+    {
+        "store_id": "3658858813834057135",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "14:00:00"
+    },
+    {
+        "store_id": "3658858813834057135",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "14:00:00"
+    },
+    {
+        "store_id": "3658858813834057135",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "14:00:00"
+    },
+    {
+        "store_id": "3658858813834057135",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "14:00:00"
+    },
+    {
+        "store_id": "3658858813834057135",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "14:00:00"
+    },
+    {
+        "store_id": "3098577315179853054",
+        "dayOfWeek": "1",
+        "start_time_local": "10:00:00",
+        "end_time_local": "16:30:00"
+    },
+    {
+        "store_id": "5038634369852816955",
+        "dayOfWeek": "2",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "5038634369852816955",
+        "dayOfWeek": "3",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "5038634369852816955",
+        "dayOfWeek": "1",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "5038634369852816955",
+        "dayOfWeek": "4",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "5038634369852816955",
+        "dayOfWeek": "0",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1248021061006759555",
+        "dayOfWeek": "3",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1248021061006759555",
+        "dayOfWeek": "4",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1248021061006759555",
+        "dayOfWeek": "1",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1248021061006759555",
+        "dayOfWeek": "0",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1248021061006759555",
+        "dayOfWeek": "2",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1409173636844620177",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1409173636844620177",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1409173636844620177",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1409173636844620177",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1409173636844620177",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1454275265918324971",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1454275265918324971",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1454275265918324971",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1454275265918324971",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "1454275265918324971",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:05:00"
+    },
+    {
+        "store_id": "799231298020480651",
+        "dayOfWeek": "1",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:20:00"
+    },
+    {
+        "store_id": "799231298020480651",
+        "dayOfWeek": "4",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:20:00"
+    },
+    {
+        "store_id": "799231298020480651",
+        "dayOfWeek": "0",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:20:00"
+    },
+    {
+        "store_id": "799231298020480651",
+        "dayOfWeek": "2",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:20:00"
+    },
+    {
+        "store_id": "799231298020480651",
+        "dayOfWeek": "3",
+        "start_time_local": "10:30:00",
+        "end_time_local": "20:20:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "5",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "6",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "1045109719827624024",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "5",
+        "start_time_local": "09:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "6",
+        "start_time_local": "09:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "5769313512266639737",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "20:45:00"
+    },
+    {
+        "store_id": "6802170958662206802",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "6802170958662206802",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "6802170958662206802",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "6802170958662206802",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "6802170958662206802",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "3215002817739610350",
+        "dayOfWeek": "4",
+        "start_time_local": "10:30:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "3215002817739610350",
+        "dayOfWeek": "1",
+        "start_time_local": "10:30:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "3215002817739610350",
+        "dayOfWeek": "2",
+        "start_time_local": "10:30:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "3215002817739610350",
+        "dayOfWeek": "0",
+        "start_time_local": "10:30:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "3215002817739610350",
+        "dayOfWeek": "3",
+        "start_time_local": "10:30:00",
+        "end_time_local": "21:05:00"
+    },
+    {
+        "store_id": "5477371529466305274",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:30:00"
+    },
+    {
+        "store_id": "5477371529466305274",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:30:00"
+    },
+    {
+        "store_id": "5477371529466305274",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:30:00"
+    },
+    {
+        "store_id": "5477371529466305274",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:30:00"
+    },
+    {
+        "store_id": "5477371529466305274",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "21:30:00"
+    },
+    {
+        "store_id": "112134751317840421",
+        "dayOfWeek": "4",
+        "start_time_local": "09:00:00",
+        "end_time_local": "23:00:00"
+    },
+    {
+        "store_id": "112134751317840421",
+        "dayOfWeek": "3",
+        "start_time_local": "05:00:00",
+        "end_time_local": "23:00:00"
+    },
+    {
+        "store_id": "112134751317840421",
+        "dayOfWeek": "1",
+        "start_time_local": "05:00:00",
+        "end_time_local": "23:00:00"
+    },
+    {
+        "store_id": "112134751317840421",
+        "dayOfWeek": "0",
+        "start_time_local": "05:00:00",
+        "end_time_local": "23:00:00"
+    },
+    {
+        "store_id": "112134751317840421",
+        "dayOfWeek": "6",
+        "start_time_local": "05:00:00",
+        "end_time_local": "23:00:00"
+    },
+    {
+        "store_id": "112134751317840421",
+        "dayOfWeek": "2",
+        "start_time_local": "05:00:00",
+        "end_time_local": "23:00:00"
+    },
+    {
+        "store_id": "112134751317840421",
+        "dayOfWeek": "5",
+        "start_time_local": "05:00:00",
+        "end_time_local": "23:00:00"
+    },
+    {
+        "store_id": "6278139137510113118",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6278139137510113118",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6278139137510113118",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6278139137510113118",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6278139137510113118",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6278139137510113118",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6278139137510113118",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6755843661564887903",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6755843661564887903",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6755843661564887903",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6755843661564887903",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6755843661564887903",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6755843661564887903",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "6755843661564887903",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4081887842474631281",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4081887842474631281",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4081887842474631281",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4081887842474631281",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4081887842474631281",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4081887842474631281",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4081887842474631281",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1333970320762817919",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1333970320762817919",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1333970320762817919",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1333970320762817919",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1333970320762817919",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1333970320762817919",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1333970320762817919",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4168663053750977684",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4168663053750977684",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4168663053750977684",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4168663053750977684",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4168663053750977684",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4168663053750977684",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "4168663053750977684",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "4",
+        "start_time_local": "18:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "1",
+        "start_time_local": "18:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "0",
+        "start_time_local": "18:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "2",
+        "start_time_local": "18:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "3",
+        "start_time_local": "18:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "6",
+        "start_time_local": "18:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "2645936215496927641",
+        "dayOfWeek": "5",
+        "start_time_local": "18:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1495807507997587395",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1495807507997587395",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1495807507997587395",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1495807507997587395",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1495807507997587395",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1495807507997587395",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "1495807507997587395",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "442238990270735302",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "442238990270735302",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "442238990270735302",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "442238990270735302",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "442238990270735302",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "442238990270735302",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "442238990270735302",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5770407949560410572",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5770407949560410572",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5770407949560410572",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5770407949560410572",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5770407949560410572",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5770407949560410572",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5770407949560410572",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "650444438682216676",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "650444438682216676",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "650444438682216676",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "650444438682216676",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "650444438682216676",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "650444438682216676",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "650444438682216676",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "0",
+        "start_time_local": "11:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "1",
+        "start_time_local": "11:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "3",
+        "start_time_local": "11:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "5",
+        "start_time_local": "11:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "6",
+        "start_time_local": "11:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "4",
+        "start_time_local": "11:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "5789888770039313390",
+        "dayOfWeek": "2",
+        "start_time_local": "11:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "525217215046186225",
+        "dayOfWeek": "4",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "525217215046186225",
+        "dayOfWeek": "0",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "525217215046186225",
+        "dayOfWeek": "2",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "525217215046186225",
+        "dayOfWeek": "3",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "525217215046186225",
+        "dayOfWeek": "6",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "525217215046186225",
+        "dayOfWeek": "1",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    },
+    {
+        "store_id": "525217215046186225",
+        "dayOfWeek": "5",
+        "start_time_local": "00:00:00",
+        "end_time_local": "23:59:59"
+    }
+]
