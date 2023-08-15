@@ -101,7 +101,7 @@ For further assistance or questions, contact [your contact information].
 ## Debugging Endpoint
 
 For debugging purposes, you can use the following endpoint:
-- Debugging URL: [http://127.0.0.1:8000/api/debug_code/<store_id>]
+- Debugging URL: http://127.0.0.1:8000/api/debug_code/<store_id>
 - Eg: [http://127.0.0.1:8000/api/debug_code/2311272071941344516](http://127.0.0.1:8000/api/debug_code/2311272071941344516)
 - This URL triggers the `debug_code` view, which is a starting point to simulate the calculations.
 - The steps can be viewed in the console and can be related to the logic explained below.
@@ -179,6 +179,6 @@ The output of this function would be the uptime/downtime in minutes per Valid fr
 All the local calculations are combined together to calculate the final up/down time per hr, day, and week.
 
 
-## Expected updates:
+## Expected Future Updates:
 The project is built within 2 - 2.5 days with a Rapid prototyping approach and will serve as an MVP (Minimal viable product).
 I will work further on this to refactor the code and break down enormous functional blocks into easy and readable functional units. 
