@@ -1,6 +1,6 @@
 # Store Monitoring
 
-This README provides an overview of the logic and functionality behind the Store Uptime/Downtime Calculator, which calculates the uptime and downtime for all the store instances within specific time intervals. The calculator processes store logs and operating hours to generate accurate uptime and downtime metrics.
+This project aims to provide backend APIs for monitoring the online status of the stores during their business hours. The system is built using the Django framework and is designed to fetch and analyze data from various sources gathered in the database to generate reports that indicate the uptime and downtime of each store.
 
 ## Installation
 The below instructions are unnecessary since all the dependencies should be available out of the box.
