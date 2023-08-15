@@ -1,1 +1,11 @@
+AppData/
 /__pycache__
+apps/home/__pycache__/
+apps/home/app_utils/__pycache__/
+apps/home/migrations/__pycache__/
+apps/home/models/__pycache__/
+apps/utils/__pycache__/
+StoreMonitoring/__pycache__/
+StoreMonitoring/settings/__pycache__/
+StoreMonitoring/local_db.sqlite3
+Resources/data_analytics.ipynb

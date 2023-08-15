@@ -1,4 +1,5 @@
 import uuid, csv, os, pytz
+from concurrent.futures import ThreadPoolExecutor
 
 from ..models.store import Store
 from ..models.report import StoreReportHeader, StoreReportItem
@@ -7,7 +8,7 @@ from datetime import datetime, timezone, timedelta
 
 
 def custom_id():
-    """generates 8 character alphanumeric ID """
+    """generates 32 character alphanumeric ID """
     
     # unique_id = secrets.token_urlsafe(8)
     unique_id = str(uuid.uuid4()).replace('-', '')
@@ -51,13 +52,16 @@ def export_store_report(rid, data):
             file_prefix=rid,
             file_ext="csv"
             )
-    
-    with open(export_filepath, 'w', newline='') as data_file:
-        fieldnames = data[0].to_dict().keys()
-        writer = csv.DictWriter(data_file, fieldnames=fieldnames)
-        writer.writeheader()
-        for item in data:
-            writer.writerow(item.to_dict())
+    try:
+        with open(export_filepath, 'w', newline='') as data_file:
+            fieldnames = data[0].to_dict().keys()
+            writer = csv.DictWriter(data_file, fieldnames=fieldnames)
+            writer.writeheader()
+            for item in data:
+                writer.writerow(item.to_dict())
+
+    except Exception:
+        filename, export_filepath = None, None
 
     return filename, export_filepath
 
@@ -71,6 +75,8 @@ def export_store_report(rid, data):
 
 
 def get_days(start, step):
+    """Returns a list with indices for the days found within input range"""
+
     days = []
     
     for r in range(0, step+1):
@@ -83,12 +89,14 @@ def get_days(start, step):
 
 
 def get_timedelta_in_mins(start, end):
+    """Returns time delta in minutes"""
     diff = end - start
     diff_mins = diff.total_seconds() / 60
     return round(diff_mins, 2)
 
 
 
+# Refer to the README.md file for the logic 
 
 def process_logs(store_logs, int_start_pt, int_end_pt):
     """This fuction does an analysis on the logs found in the valid interval to calculate the possible uptime / downtime"""
@@ -131,9 +139,10 @@ def process_logs(store_logs, int_start_pt, int_end_pt):
 
 
 
+# Refer to the README.md file for the logic 
 
 def get_activity_in_mins(store_obj, max_datetime_utc, min_datetime_utc):
-    """This fucntion accepts an interval and retrives uptime and downtime in the previously specified period."""
+    """Accepts an interval and retrives uptime and downtime in the previously specified period."""
     
     print("+"*90, end='\n\n')
     
@@ -228,7 +237,7 @@ def get_activity_in_mins(store_obj, max_datetime_utc, min_datetime_utc):
 
 
 def get_store_report(store_obj, max_datetime_utc, report_obj=0) -> dict:
-    """This function handles a single instance of a store and retrive the uptime and downtime in - past_hour, past_day, past_week"""
+    """Handles a single instance of a store and retrive the uptime and downtime in - past_hour, past_day, past_week"""
 
     past_hour_utc = max_datetime_utc - timedelta(hours=1)
     past_day_utc  = max_datetime_utc - timedelta(days=1)
@@ -260,43 +269,13 @@ def get_store_report(store_obj, max_datetime_utc, report_obj=0) -> dict:
 
 
 def run_report_task(report_obj):
+    """Takes in Report object and executes parallel threads to process result"""
 
     max_datetime = datetime.strptime('2023-01-25 18:13:22.479220 UTC', '%Y-%m-%d %H:%M:%S.%f UTC')
     max_datetime_utc = max_datetime.replace(tzinfo=timezone.utc)
 
     store_reports = []
     all_stores = Store.objects.all()[:100]
-
-    for store_obj in all_stores:
-        report = get_store_report(store_obj, max_datetime_utc, report_obj)
-        store_reports.append(report)
-
-    try:
-        StoreReportItem.objects.bulk_create(store_reports)
-        status = StoreReportHeader.Status.COMPLETED
-    except Exception:
-        status = StoreReportHeader.Status.FAILED
-
-
-    filename, export_filepath = export_store_report(rid=report_obj.id, data=store_reports)
-
-    report_obj.status = status
-    report_obj.filepath = export_filepath
-    report_obj.save()
-
-
-#####################################
-
-from concurrent.futures import ThreadPoolExecutor
-
-
-def run_report_task2(report_obj):
-
-    max_datetime = datetime.strptime('2023-01-25 18:13:22.479220 UTC', '%Y-%m-%d %H:%M:%S.%f UTC')
-    max_datetime_utc = max_datetime.replace(tzinfo=timezone.utc)
-
-    store_reports = []
-    all_stores = Store.objects.all()
 
     max_threads = 4
 
@@ -309,10 +288,6 @@ def run_report_task2(report_obj):
             executor.submit(populate_store_report, store_obj)
 
     executor.shutdown()
-
-    # for store_obj in all_stores:
-    #     report = get_store_report(store_obj, max_datetime_utc, report_obj)
-    #     store_reports.append(report)
 
     try:
         StoreReportItem.objects.bulk_create(store_reports)

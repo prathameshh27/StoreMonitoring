@@ -3,6 +3,9 @@
 This README provides an overview of the logic and functionality behind the Store Uptime/Downtime Calculator, which calculates the uptime and downtime for all the store instances within specific time intervals. The calculator processes store logs and operating hours to generate accurate uptime and downtime metrics.
 
 ## Installation
+The below instructions are unnecessary since all the dependencies should be available out of the box.
+Use the steps only if the dependencies are found missing.
+Jump to step 8 to setup the database.
 
 1. Ensure you have Python 3.x and pip installed on your system.
 
@@ -39,12 +42,17 @@ This README provides an overview of the logic and functionality behind the Store
     python manage.py createsuperuser
     ```
 
-8. Unzip the database from the StoreMonitoring folder to use the data
+8. Unzip the database from the StoreMonitoring folder to use the data loaded via CSV input files.
+Please place the database under the StoreMonitoring folder.
 
 
 ## Report Generation APIs
-
 Below are the API endpoints available for triggering and retrieving reports:
+
+### Base URL
+
+The base URL for all API endpoints is: `http://127.0.0.1:8000/api`
+
 
 ### Trigger Report Generation - `/trigger_report`
 
@@ -52,15 +60,21 @@ This API initiates the generation of a report from the stored data. It requires 
 
 **Input: None**
 
+**Example:**
+`http://127.0.0.1:8000/api/trigger_report/`
+
 **Output:**
 - `report_id` (Randomly generated string)
   
-### Get Report Status or CSV - `/get_report`
+### Get Report Status or CSV - `/get_report/<report_id>`
 
 This API is used to retrieve the status of the report generation or the generated CSV file.
 
 **Input:**
 - `report_id` (Report identifier obtained from the `/trigger_report` API)
+
+**Example:**
+`http://127.0.0.1:8000/api/get_report/f4adb7d5ada746a19c7747c970dc6e65`
 
 **Output:**
 - If report generation is still in progress, the API returns `"Running"` as the output.
@@ -85,22 +99,24 @@ For further assistance or questions, contact [your contact information].
 ## Debugging Endpoint
 
 For debugging purposes, you can use the following endpoint:
-- Debugging URL: [http://127.0.0.1:8000/api/debug_code/<store_id>](http://127.0.0.1:8000/api/debug_code/2311272071941344516)
+- Debugging URL: [http://127.0.0.1:8000/api/debug_code/<store_id>]
 - Eg: [http://127.0.0.1:8000/api/debug_code/2311272071941344516](http://127.0.0.1:8000/api/debug_code/2311272071941344516)
 - This URL triggers the `debug_code` view, which is a starting point to simulate the calculations.
 - The steps can be viewed in the console and can be related to the logic explained below.
 
+
+
 ## Logic Overview
 
-### `debug_code` View
+### `debug_code` View:
 
 The `debug_code` view is responsible for initializing the calculation process. It sets the `max_date_utc` to the current time (UTC) and triggers the `get_store_report` function.
 
-### `get_store_report` Function
+### `get_store_report` Function:
 
 This function handles a single-store instance. It retrieves the uptime and downtime for specific time intervals (past hour, past day, past week). These intervals are calculated in UTC and passed to the `get_activity_in_mins` function.
 
-### `get_activity_in_mins` Function
+### `get_activity_in_mins` Function:
 
 The `get_activity_in_mins` function accepts an interval and retrieves the uptime and downtime within the specified period. It collects the necessary dependencies to compute the results:
 
@@ -145,7 +161,7 @@ You will see the below line on the console if a valid frame is found:
 
 If valid intervals are found, the function calls `process_logs` to analyze the logs and calculate uptime/downtime. If no operating hours are found, a continuous 24/7 operational interval is considered.
 
-### `process_logs` Function
+### `process_logs` Function:
 
 The `process_logs` function analyzes logs within a valid interval to calculate possible uptime and downtime. 
 Assumptions include:
@@ -159,3 +175,8 @@ The output of this function would be the uptime/downtime in minutes per Valid fr
 `Local Timeframe - Uptime / Downtime:  60.0    0`
 
 All the local calculations are combined together to calculate the final up/down time per hr, day, and week.
+
+
+## Expected updates:
+The project is built within 2 - 2.5 days with a Rapid prototyping approach and will serve as an MVP (Minimal viable product).
+I will work further on this to refactor the code and break down enormous functional blocks into easy and readable functional units. 

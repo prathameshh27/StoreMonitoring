@@ -14,23 +14,33 @@ from .app_utils.functions import *
 ##########################################################
 
 
+
+# API Endpoint: `/api/debug_code/<store_id>`
+
 def debug_code(request, sid):    
-    '''Pass a store ID via the endpoint to debug code exection'''
+    '''Pass a store ID via the endpoint to understand / debug code exection in the console'''
+
+    res = dict()
 
     max_datetime = datetime.strptime('2023-01-25 18:13:22.479220 UTC', '%Y-%m-%d %H:%M:%S.%f UTC')
     max_datetime_utc = max_datetime.replace(tzinfo=timezone.utc)
 
     report_obj = StoreReportHeader(status = StoreReportHeader.Status.COMPLETED)
 
-    store_obj = Store.objects.get(id=sid)
+    try:
+        store_obj = Store.objects.get(id=sid)
+        report = get_store_report(store_obj, max_datetime_utc, report_obj)
+        res = report.to_dict()
 
-    report = get_store_report(store_obj, max_datetime_utc, report_obj)
-
-    print(report)
-
-    return JsonResponse(report.to_dict(), safe=False)
+    except Exception:
+        res["error"] = "Something went wrong"
 
 
+    return JsonResponse(res, safe=False)
+
+
+
+# API Endpoint: `/api/trigger_report/`
 
 def run_report(request):    
     """Generates report for every store and returns a report ID"""
@@ -38,7 +48,7 @@ def run_report(request):
     report_obj = StoreReportHeader()
     report_obj.save()
 
-    thread = threading.Thread(target=run_report_task2, args=(report_obj,))
+    thread = threading.Thread(target=run_report_task, args=(report_obj,))
     thread.start()
 
     # asyncio.create_task(async_run_report_task(report_obj))
@@ -51,6 +61,8 @@ def run_report(request):
 
 
 
+
+# API Endpoint: `/api/get_report/<report_id>`
 
 def get_report(request, rid):
     """Downloads report if available"""
@@ -84,5 +96,3 @@ def get_report(request, rid):
         response = JsonResponse(res, safe=False)
 
     return response
-
-
