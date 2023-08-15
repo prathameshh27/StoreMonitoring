@@ -150,14 +150,14 @@ IPs1 ------------- IPe1
                  IPs2 ------------- IPe2
 ```
 Where, 
-- IPs, IPe are Input start and end
-- OHs, OHe are Operating hours start and end
+- IPs, IPe are Input start and end hours
+- OHs, OHe are start and end Operating hours 
 
 Consider 1st case,
-max(IPs1, OHs) = OHs
-min(IPe1, OHe) = IPe1
+- max(IPs1, OHs) = OHs
+- min(IPe1, OHe) = IPe1
 
-Hence the valid interval to check the uptime/downtime would be (OHs, IPe1)
+Hence the valid interval to check the uptime/downtime would be (OHs, IPe1).                                             
 You will see the below line on the console if a valid frame is found:                                                       
 ```Valid/applicable Interval:      2023-01-25 17:13:22.479220+00:00      2023-01-25 18:13:22.479220+00:00```
 
