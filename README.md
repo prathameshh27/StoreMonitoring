@@ -174,7 +174,7 @@ Assumptions include:
 - Inactive windows are calculated by finding the longest difference between inactive and active records.
 - If the function identifies an inactive period within the timeframe, the period from the start to the inactive record is considered uptime, and the inactive record to the end is considered downtime.                
           ```start |---------------InA-------| end```
-- The output of this function would be the uptime/downtime in minutes per Valid frame:
+- The output of this function would be the uptime/downtime in minutes per Valid frame:             
 ```Local Timeframe - Uptime / Downtime:  60.0    0```
 - If the store is not found active then the function checks if the uptime is greater than 10% of the stores operating hours. If not then 0 is returned. (Need more research on this to identify the percentage threshold) 
 
