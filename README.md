@@ -118,18 +118,18 @@ At this point, We have the very 1st interval/operation hours in local time.
 This is skipped due to the detection of invalid intervals. The function moves to the next interval. 
 The function gets the day and identifies the exact operating interval from the past which can be seen in the console below:
 
-`
+```
 Day of the week: 2
 Local Interval:         2023-01-25 10:00:00-05:00               2023-01-25 23:59:59-05:00
 UTC Interval:           2023-01-25 15:00:00+00:00               2023-01-26 04:59:59+00:00
-`
+```
 
-Next the fuction checks the overlap between operating hours (OH) and input interval / timeframe (IP)
-`
+Next the function checks the overlap between operating hours (OH) and input interval/timeframe (IP)
+```
 IPs1 ------------- IPe1
         OHs ------------- OHe
                  IPs2 ------------- IPe2
-`
+```
 Where, 
 IPs, IPe are Input start and end
 OHs, OHe are Operating hours start and end
@@ -154,7 +154,7 @@ Assumptions include:
 - Downtime is identified when inactive logs are present.
 - Inactive windows are calculated by finding the longest difference between inactive and active records.
 - If the function identifies an inactive period within the timeframe, the period from the start to the inactive record is considered uptime, and the inactive record to the end is considered downtime.
-        start |---------------InA-------| end
+        ```start |---------------InA-------| end```
 The output of this function would be the uptime/downtime in minutes per Valid frame:
 `Local Timeframe - Uptime / Downtime:  60.0    0`
 
