@@ -65,6 +65,8 @@ This API initiates the generation of a report from the stored data. It requires 
 
 **Output:**
 - `report_id` (Randomly generated string)
+- Report once generated will be saved under the following folder: 
+`AppData\Exports\<date>\StoreReports`
   
 ### Get Report Status or CSV - `/get_report/<report_id>`
 
